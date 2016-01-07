@@ -41,20 +41,18 @@ nav{
 nav ul li{
   display: inline-block;
   height: 79px;
-  vertical-align: middle;
+  /*vertical-align: middle;*/
   list-style-type: none;
   width: 16%;
   text-align: center;
   padding: 30px 0 0px 0;
+  position: relative;
 }
-nav ul{
-      margin-left: 45px;
-      margin-right: 45px;
-}
-nav a:hover{
+
+/*nav a:hover{
   color: #775656;
   font-weight: bold;
-}
+}*/
 a{
   text-decoration: none;
   color: black;
@@ -86,6 +84,18 @@ h2{
 display: block;
 margin: auto;
 padding-top: 5px;
+}
+.menu-deroulant{
+  display: none;
+  position: absolute;
+  background-color: #EEEEEE;
+}
+
+nav ul li:hover .menu-deroulant {
+  display: block;
+}
+.menu-deroulant ul li{
+  width : 100%;
 }
 .grisclair{
   color: #A6A6A6;
@@ -128,7 +138,6 @@ footer{
 
 }
 .footershit{
-  width: 900px;
   height: 235px;
 }
 footer div{
